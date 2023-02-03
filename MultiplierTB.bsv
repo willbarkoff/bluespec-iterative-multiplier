@@ -53,12 +53,12 @@ module mkMultiplierUnitTH( Empty );
   // ------ TEST 2 ------
 
   rule test2Start (state == Test2Start);
-    mul.start( 420, 69 );
+    mul.start( 471, 102 );
     state <= Test2Finish;
   endrule
 
   rule test2Finish (state == Test2Finish);
-    verify( mul.result(),  28980 );
+    verify( mul.result(),  48042 );
     state <= Test3Start;
   endrule
 
